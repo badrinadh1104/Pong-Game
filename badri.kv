@@ -1,0 +1,27 @@
+<MyWork>
+    name: name
+    lastname: lastname
+    GridLayout:
+        cols:1
+        size:root.width-200,root.height-200
+        pos:100,100
+
+        GridLayout:
+            cols:2
+            Label:
+                text:"name:"
+                font_size:32
+            TextInput:
+                id:name
+                multiline:False
+            Label:
+                text:"lastname:"
+            TextInput:
+                id:lastname
+                multiline:False
+                font_size:32
+        Button:
+            text:"submit"
+            on_press:root.btn()
+
+
